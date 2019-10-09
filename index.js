@@ -33,6 +33,28 @@ function HistoryToggle(props) {
     );
 };
 
+function HistoryListItem(props) {
+    const boardWidth = 3;
+    const col = props.step.square % boardWidth;
+    const row = Math.floor(props.step.square / boardWidth);
+    const move = props.move;
+    const desc = move ? 
+        `Go to move #${move} at (${col}, ${row})` :
+        'Go to game start';
+    const currentStep = (props.stepNumber === move) ? "currentStep" : "";
+
+    return (
+       <li>
+           <button 
+               className = {currentStep}
+               onClick={() => props.onClick(move)}
+            >
+            {desc}
+           </button>
+       </li>
+   );
+}
+
 class Board extends React.Component {
     renderSquare(i) {
         const currentStep = (i === this.props.square);
@@ -45,6 +67,7 @@ class Board extends React.Component {
                 currentStep={currentStep}
                 key={i}
                 win={win}
+                        
             />
         );
     }
@@ -123,22 +146,14 @@ class Game extends React.Component {
         const winLine = winner.winLine;
         
         const moves = history.map((step, move) => {
-            const boardWidth = 3;
-            const col = step.square % boardWidth;
-            const row = Math.floor(step.square / boardWidth);
-            const desc = move ? 
-                `Go to move #${move} at (${col}, ${row})` :
-                'Go to game start';
-            const currentStep = (this.state.stepNumber === move) ? "currentStep" : "";
             return (
-                <li key={move}>
-                    <button 
-                        className = {currentStep}
-                        onClick={() => this.jumpTo(move)}
-                    >
-                    {desc}
-                    </button>
-                </li>
+                <HistoryListItem
+                    key={move}
+                    stepNumber={this.state.stepNumber} 
+                    step={step}
+                    move={move}
+                    onClick={(step) => this.jumpTo(step)}
+                />
             );
         });
         
