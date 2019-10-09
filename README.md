@@ -11,4 +11,4 @@ Here are some improvements that I made to the tic-tac-toe game which are listed 
 1. - [x] When no one wins, display a message about the result being a draw.
 
 # Initial Code
-Official interactive demo and initial code can be found here at [Codepen](https://codepen.io/gaearon/pen/gWWZgR?editors=0010).
+Official initial code and interactive demo can be found here at [Codepen](https://codepen.io/gaearon/pen/gWWZgR?editors=0010).
