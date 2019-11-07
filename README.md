@@ -14,4 +14,4 @@ Here are some improvements that I made to the tic-tac-toe game which are listed 
 Official initial code and interactive demo can be found [here](https://codepen.io/gaearon/pen/gWWZgR?editors=0010).
 
 # Solution
-My solution code and interactactive demo can be found [here](https://codepen.io/DaveWork26/pen/XWWmQLm?editors=0010).
+My solution code and interactive demo can be found [here](https://codepen.io/DaveWork26/pen/XWWmQLm?editors=0010).
