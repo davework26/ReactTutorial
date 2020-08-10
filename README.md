@@ -15,3 +15,8 @@ Official initial code and interactive demo can be found [here](https://codepen.i
 
 # My Solution
 My solution code and interactive demo can be found [here](https://codepen.io/DaveWork26/pen/XWWmQLm?editors=0010).
+
+## Screenshot
+
+![React Tic Tac Toe](./../Screenshots/ReactTicTacToe.JPG?raw=true "React Tic Tac Toe")
+
