@@ -1,5 +1,5 @@
 # React Tic Tac Toe
-My solution to React tutorial Tic Tac Toe game improvement exercises at https://reactjs.org/tutorial/tutorial.html#wrapping-up
+My solution to the official React tutorial Tic Tac Toe game improvement exercises at https://reactjs.org/tutorial/tutorial.html#wrapping-up
 
 Here are some improvements that I made to the tic-tac-toe game which are listed in order of increasing difficulty:
 
